@@ -2,41 +2,152 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/backbone/backbone.js"></script>
-    <script src="bower_components/json2/json2.js"></script>
-    <script src="bower_components/underscore/underscore.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/json2/json2.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/my.js"></script>
     <title>bootstrap version</title>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand">METRO<span>NIC</span></a>
+            <a class="navbar-brand"><img src="styles/images/logo.png" alt="METRONIC"></a>
         </div>
         <div class="navbar-collapse collapse pull-right">
             <ul class="nav navbar-nav navbar-right nav-header">
-                <li><a href="#"><img src="images/notify.jpg"></a></li>
-                <li><a href="#"><img src="images/messages.jpg"></a></li>
-                <li><a href="#"><img src="images/korobki.jpg"></a></li>
-                <li><a href="#"><img src="images/bob_nilson.jpg"> Bob Nilson</a> </li>
+                <li><a href="#"><img src="styles/images/notify.jpg"></a></li>
+                <li><a href="#"><img src="styles/images/messages.jpg"></a></li>
+                <li><a href="#"><img src="styles/images/korobki.jpg"></a></li>
+                <li><a href="#"><img src="styles/images/bob_nilson.jpg"> Bob Nilson</a> </li>
             </ul>
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid page-container">
     <div class="row">
         <div class="col-sm-3 col-md-2 left-sidebar">
             <ul class="nav nav-sidebar">
-                <li></li>
-                <li>Today</li>
-                <li>Inbox/Outbox</li>
-                <li>Tasks</li>
+                <li class="sidebar-toggler-wrapper">
+                    <div class="sidebar-toggler hidden-phone"></div>
+                </li>
+                <li class="sidebar-search-wrapper">
+                    <div class="search-box">
+                        <form class="sidebar-form-search" METHOD="post">
+                            <input class="search-input" type="text" placeholder="Search...">
+                            <input type="button" class="submit pull-right" value=" ">
+                        </form>
+                    </div>
+                </li>
+                <li id="li_today"><div><span>Today</span></div></li>
+                <li id="show_inbox"><div><span>Inbox/Outbox</span></div>
+                    <ul>
+                        <li>Inbox</li>
+                        <li>Outbox</li>
+                        <li>Spam</li>
+                    </ul>
+                </li>
+                <li id="show_calendar">
+                    <div><span>Calendar</span></div>
+                    <ul>
+                        <li>Events</li>
+                        <li>Dates</li>
+                        <li>smth else</li>
+                    </ul>
+                </li>
+                <li id="show_tasks">
+                    <div><span>Tasks</span></div>
+                    <ul>
+                        <li>Best Moments</li>
+                        <li>Another Task List</li>
+                        <li>Add New +</li>
+                    </ul>
+                </li>
             </ul>
+        </div>
+        <div class="col-md-7">
+
+        </div>
+        <div class="col-sm-5 col-md-3">
+            <div class="input-elements">
+                <div class="control-group">
+                    <label class="control-label" for="title">Title</label>
+                    <div class="controls">
+                        <input id="title" name="title" type="text" placeholder=":)" class="input-sm">
+                    </div>
+                </div>
+            </div>
+            <div id="features-area">
+                <div id="todo">
+                    <div id="list-box">
+                        <div class="todo-line">
+                            <div><input type="checkbox"></div>
+                            <div><label>task 1</label></div>
+                        </div>
+                        <div class="todo-line">
+                            <div><input type="checkbox"></div>
+                            <div><label>task 2</label></div>
+                        </div>
+                    </div>
+                    <div id="add2list-box">
+                        <form id="add_form">
+                            <div><img src="styles/images/add-task.png" alt="add-task"></div>
+                            <div><input type="text" id="add-input" placeholder="I should to..."></div>
+                        </form>
+                    </div>
+
+                </div>
+                <div id="notepad">
+                    <img src="styles/images/enlarge.png" alt="Large notepad" id="enlarge">
+                    <div contenteditable="true" id="notepad-content">
+                        <p>You can write here!</p>
+                    </div>
+                </div>
+                <div id="chat">
+                    <div id="chat-text-box">
+                        <div class="iamauthor">
+                            <div class="chat-photo-left">
+                                <img src="styles/images/bob-nilson-big.png" alt="bob">
+                            </div>
+                            <div>
+                                <div class="chat-text-left">
+                                    <span><span class="blue_span">Bob Nilson</span> at Jul 25, 2012 11:09</span>
+                                    <div><p>aaaaaaaaaaasssaa<p>
+                                        asdasdasddddddddddd<p>
+                                        asdasdasdasdasdasda<p>ddddddddddddddd
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interlocutor">
+                            <div>
+                                <div class="chat-text-right">
+                                    <span><span class="blue_span">Richard Doe</span> at Jul 25, 2012 11:10</span>
+                                    <div>
+                                        <p>aaaaaaaaaaasssaa<p>
+                                        <!--asdasdasddddddddddd<p>-->
+                                        <!--asdasdasdasdasdasda-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-photo-right pull-right">
+                                <img src="styles/images/richard-doe.png" alt="richard">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="send-msg-box">
+                        <form id="send-form">
+                            <div><input type="text" id="send-msg"></div>
+                            <div><input type="submit" id="submit-msg" value=" "></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

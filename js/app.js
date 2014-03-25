@@ -11,7 +11,7 @@ $(function(){
         },
 
         unselectBox: function(){
-            $('ul li').removeClass('active');
+            $('li').removeClass('active');
         },
 
         selectBox: function(item){
@@ -30,22 +30,22 @@ $(function(){
 
         today: function(){
             this.showLayouts('#calendar-layer');
-            this.selectBox('li#li_today')
+            this.selectBox('#li_today')
         },
 
         inbox: function(){
             this.showLayouts('#mail-layer');
-            this.selectBox('li#show_inbox');
+            this.selectBox('#show_inbox');
         },
 
         calendar: function(){
             this.showLayouts('div#calendar-layer');
-            this.selectBox('li#show_calendar')
+            this.selectBox('#show_calendar')
         },
 
         tasks: function(){
             this.showLayouts('div#tasks-layer');
-            this.selectBox('li#show_tasks');
+            this.selectBox('#show_tasks');
         }
     });
 
