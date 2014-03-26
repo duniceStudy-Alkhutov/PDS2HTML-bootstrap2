@@ -87,11 +87,11 @@
 }
 .nav-sidebar li ul li{
     color: #ffffff;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
     text-decoration: none;
     font-size: 14px;
     line-height: 35px;
-    padding: 0 20px;
+    padding: 0 20px 0 45px;
     display: block;
 }
 .nav-sidebar ul{
@@ -190,7 +190,8 @@ li.active div:after{
     outline: none !important;
     border: none !important;
 }
-/************    FEATURES AREA    **********/
+/************    RIGHT PANEL   ***********/
+/************   FEATURES AREA   **********/
 #features-area{
 
 }
@@ -201,9 +202,10 @@ li.active div:after{
     box-shadow:         0 0 5px 0 rgba(50, 50, 50, 1);
 }
 #todo:nth-child(1){
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
     margin-right: 20px;
+    /*min-width: 200px;*/
 }
 #todo #list-box>div{
     /*padding: 6px 8px;*/
@@ -260,6 +262,9 @@ li.active div:after{
     /*background: #ffffA0;*/
     font-size: 14px;
 }
+#add2list-box input{
+    min-width: 120px;
+}
 #list-box label:before{
 }
 .trick{
@@ -276,7 +281,7 @@ li.active div:after{
     -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 1);
     -moz-box-shadow:    0 0 5px 0 rgba(50, 50, 50, 1);
     box-shadow:         0 0 5px 0 rgba(50, 50, 50, 1);
-    margin: 40px 30px 30px 50px;
+    margin: 40px 30px 30px 20px;
     position: relative;
 }
 #notepad-content{
@@ -337,7 +342,6 @@ li.active div:after{
     position: relative;
 }
 .iamauthor>div:nth-child(2){
-    width: 75%;
     float: right;
 }
 .chat-text-left{
@@ -350,10 +354,10 @@ li.active div:after{
 }
 .chat-text-left span{
 }
-.chat-text-left:before{
+.chat-text-left:after{
     position: absolute;
     top: 14px;
-    left: -8px;
+    left: 5px;
     content: '';
     width: 0;
     height: 0;
@@ -362,10 +366,12 @@ li.active div:after{
     border-right: solid 10px limegreen;
 }
 
-.chat-photo-left{
-    padding-top: 2px;
-    margin-right: 5px;
-    vertical-align: top;
+.chat-photo-left img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .blue_span{
     color: dodgerblue;
@@ -381,9 +387,17 @@ li.active div:after{
     position: relative;
 }
 .interlocutor>div:nth-child(1){
-    width: 75%;
+    height: inherit;
+}
+.test-text-richard{
+    text-align: right;
+    padding-right: 5px;
+    border-right: 3px solid red;
+    background: #f8f8f8;
 }
 .chat-text-right{
+    /*position: absolute;*/
+    /*top: 0;*/
     border-right: 3px solid red;
     padding: 5px 8px 0 0;
     font-size: 14px;
@@ -392,10 +406,10 @@ li.active div:after{
     background: #f8f8f8;
     min-height: 71px;
 }
-.chat-text-right:after{
+.chat-text-right:after, .test-text-richard:after{
     position: absolute;
     top: 14px;
-    right: -8px;
+    right: 5px;
     content: '';
     width: 0;
     height: 0;
@@ -403,11 +417,16 @@ li.active div:after{
     border-bottom: solid 10px transparent;
     border-left: solid 10px red;
 }
-.chat-photo-right{
-    float: right;
-    padding-top: 2px;
-    margin-left: 5px;
-    vertical-align: top;
+.chat-photo-right img{
+    /*float: right;*/
+    /*padding-top: 2px;*/
+    /*margin-left: 5px;*/
+    /*vertical-align: top;*/
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #send-msg-box{
     padding: 10px;
@@ -431,7 +450,7 @@ li.active div:after{
     display: table-cell;
 }
 #send-form>div:nth-child(1){
-    min-width: 300px;
+    /*min-width: 300px;*/
     width: 100%;
 }
 #send-form>div:nth-child(1) input{
