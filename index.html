@@ -31,7 +31,7 @@
 </div>
 <div class="container-fluid page-container">
     <div class="row">
-        <div class="col-sm-3 col-md-2 left-sidebar">
+        <div class="col col-md-2 left-sidebar" id="left-panel">
             <ul class="nav nav-sidebar">
                 <li class="sidebar-toggler-wrapper">
                     <div class="sidebar-toggler hidden-phone"></div>
@@ -70,10 +70,439 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-7">
+        <div class=" col-md-7">
+            <div class="content" >
+                <div id="mail-layer" class="layers">
+                    <h1>Input/Output</h1>
+                    <div class="address-box">
+                        <img src="styles/images/home.png" alt="home">
+                        <span>Home</span>
+                        <img src="styles/images/arrow-right.png" alt="">
+                    </div>
+                    <div class="type-box">
+                        <div class="inbox-box">Inbox(3)</div>
+                        <div class="outbox-box">Outbox</div>
+                    </div>
+                    <div class="mail-box">
+                        <div class="mail-box-header">
+                            <div>
+                                <div class="mail-box-header-left-box">
+                                    <input type="checkbox">
+                                    <select>
+                                        <option selected>Accept/Decline</option>
+                                        <option>Accept</option>
+                                        <option>Decline</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mail-box-header-right-box">
+                                    <span id="right-span">1-30 of 789</span>
+                                    <a href="#"><img src="styles/images/arrow-mail-left.png" alt=""></a>
+                                    <a href="#"><img src="styles/images/arrow-mail-right.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-box">
+                            <div>
+                                <div class="message-box-line message-bg-dark bold-text">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox1" id="mycheckbox1" class="css-checkbox">
+                                        <label for="mycheckbox1" class="css-label"></label>
+                                        <!--<img src="styles/images/star-off_2.png" alt="Mark as important">-->
+                                        <span>New server for data-center needed</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>16:30 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-light bold-text">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox2" id="mycheckbox2" class="css-checkbox">
+                                        <label for="mycheckbox2" class="css-label"></label>
+                                        <span>Please help us to customization of new secure server</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 15</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-dark">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox3" id="mycheckbox3" class="css-checkbox">
+                                        <label for="mycheckbox3" class="css-label"></label>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 15</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-light">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox4" id="mycheckbox4" class="css-checkbox">
+                                        <label for="mycheckbox4" class="css-label"></label>
+                                        <span>Dolor sit amet, consectetuer adipiscing</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 14</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-dark">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox5" id="mycheckbox5" class="css-checkbox" checked>
+                                        <label for="mycheckbox5" class="css-label"></label>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 15</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-light">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox6" id="mycheckbox6" class="css-checkbox" checked>
+                                        <label for="mycheckbox6" class="css-label"></label>
+                                        <span>Dolor sit amet, consectetuer adipiscing</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 14</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-dark">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox7" id="mycheckbox7" class="css-checkbox" checked>
+                                        <label for="mycheckbox7" class="css-label"></label>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 14</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-light">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox8" id="mycheckbox8" class="css-checkbox">
+                                        <label for="mycheckbox8" class="css-label"></label>
+                                        <span>Dolor sit amet, consectetuer adipiscing</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 15</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-dark">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox9" id="mycheckbox9" class="css-checkbox">
+                                        <label for="mycheckbox9" class="css-label"></label>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 15</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-light">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox10" id="mycheckbox10" class="css-checkbox">
+                                        <label for="mycheckbox10" class="css-label"></label>
+                                        <span>Dolor sit amet, consectetuer adipiscing</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 14</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-dark">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox11" id="mycheckbox11" class="css-checkbox" checked>
+                                        <label for="mycheckbox11" class="css-label"></label>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip-fake.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="message-box-line message-bg-light">
+                                    <div>
+                                        <input type="checkbox">
+                                        <input type="checkbox" name="mycheckbox12" id="mycheckbox12" class="css-checkbox" checked>
+                                        <label for="mycheckbox12" class="css-label"></label>
+                                        <span>Dolor sit amet, consectetuer adipiscing</span>
+                                    </div>
+                                    <div>
+                                        <img src="styles/images/clip.png" alt="attached">
+                                    </div>
+                                    <div>
+                                        <span>March 14</span>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+                <div id="calendar-layer" class="layers">
+                    <h1>Calendar</h1>
+                    <div class="address-box">
+                        <img src="styles/images/home.png" alt="">
+                        <span>Home</span>
+                        <img src="styles/images/arrow-right.png" alt="">
+                    </div>
+                    <div class="calendar-box">
+                        <div class="calendar-toggle">
+                            <div>
+                                <div id="week_day">week day</div>
+                                <div id="month">month</div>
+                                <div id="today">today</div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="calendar-table">
+                            <table >
+                                <tr id="table-header" >
+                                    <td>SUN</td>
+                                    <td>MON</td>
+                                    <td>TUE</td>
+                                    <td>WED</td>
+                                    <td>THU</td>
+                                    <td>FRI</td>
+                                    <td>SAT</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text blind_text">27</span></td>
+                                    <td><span class="table_text blind_text">28</span></td>
+                                    <td><span class="table_text blind_text">29</span></td>
+                                    <td><span class="table_text blind_text">30</span></td>
+                                    <td><span class="table_text blind_text">31</span></td>
+                                    <td>
+                                        <span class="table_text">1</span>
+                                        <br>
+                                        <div id="fri_1">All day<p>Event</div>
+                                    </td>
+                                    <td><span class="table_text ">2</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text ">3</span></td>
+                                    <td><span class="table_text ">4</span></td>
+                                    <td><span class="table_text ">5</span></td>
+                                    <td><span class="table_text ">6</span></td>
+                                    <td><span class="table_text ">7</span></td>
+                                    <td><span class="table_text ">8</span></td>
+                                    <td><span class="table_text ">9</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="table_text ">10</span>
+                                        <br>
+                                        <div id="long_day"><span>Long Event</span></div>
+                                    </td>
+                                    <td><span class="table_text ">11</span></td>
+                                    <td><span class="table_text ">12</span></td>
+                                    <td><span class="table_text ">13</span></td>
+                                    <td><span class="table_text ">14</span></td>
+                                    <td>
+                                        <span class="table_text ">15</span>
+                                        <br>
+                                        <div id="fri_15_1">10:30a<p>Meeting</div>
+                                        <div id="fri_15_2">12p<p>Lunch</div>
+                                    </td>
+                                    <td>
+                                        <span class="table_text ">16</span>
+                                        <br>
+                                        <div id="sun_16">7p<p>Birthday<p>Party</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text ">17</span></td>
+                                    <td><span class="table_text ">18</span></td>
+                                    <td>
+                                        <span class="table_text ">19</span>
+                                        <br>
+                                        <div id="tue_19">4p<p>Repeating<p>Event</div>
+                                    </td>
+                                    <td><span class="table_text ">20</span></td>
+                                    <td><span class="table_text ">21</span></td>
+                                    <td><span class="table_text ">22</span></td>
+                                    <td><span class="table_text ">23</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text ">24</span></td>
+                                    <td><span class="table_text ">25</span></td>
+                                    <td><span class="table_text ">26</span></td>
+                                    <td><span class="table_text ">27</span></td>
+                                    <td>
+                                        <span class="table_text ">28</span>
+                                        <br>
+                                        <div id="click4google"><span>Click fo Google</span></div>
+                                    </td>
+                                    <td><span class="table_text ">29</span></td>
+                                    <td><span class="table_text ">30</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text blind_text">1</span></td>
+                                    <td><span class="table_text blind_text">2</span></td>
+                                    <td><span class="table_text blind_text">3</span></td>
+                                    <td><span class="table_text blind_text">4</span></td>
+                                    <td><span class="table_text blind_text">5</span></td>
+                                    <td><span class="table_text blind_text">6</span></td>
+                                    <td><span class="table_text blind_text">7</span></td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="ninja-notepad">
+                    <img src="styles/images/enlarge.png" alt="Large notepad" id="enlarge_2">
+                    <div contenteditable="true" id="notepad-content_2">
+                        You can write here!
+                    </div>
+                </div>
+                <div id="tasks-layer" class="layers">
+                    <h1>Tasks</h1>
+                    <div class="address-box">
+                        <img src="styles/images/home.png" alt="">
+                        <span>Home</span>
+                        <img src="styles/images/arrow-right.png" alt="">
+                    </div>
+                    <div class="task-box">
+                        <div class="task-box-header">
+                            <div><span>Best Moments</span></div>
+                            <div class="task-box-header-right"><img src="styles/images/settings.png" alt=""></div>
+                        </div>
+                        <div class="task-box-content">
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="add-task-panel">
+                            <div id="task_input">
+                                <div>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src="styles/images/next-btn.png" alt="next">
+                                        <p></p>
+                                        <img src="styles/images/previous.png" alt="prev">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="task-buttons">
+                                <div>
+                                    <button class="task-btn-red task-btn">Add task</button>
+                                    <button id="hide_add_task_panel" class="task-btn-cancel task-btn">Cancel</button>
+                                </div>
+                                <div>
+                                    <img src="styles/images/alarm-clock.png" alt="alarm-clock">
+                                    <img src="styles/images/flag.png" alt="flag">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="task-add">
+                            <div><button id="show_add_task_panel" class="task-btn-add task-btn">Add task</button> </div>
+                            <div><img src="styles/images/repeat.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-5 col-md-3">
+        <div class=" col-md-3">
             <div class="input-elements">
                 <div class="control-group">
                     <label class="control-label" for="title">Title</label>
@@ -95,12 +524,15 @@
                         </div>
                     </div>
                     <div id="add2list-box">
-                        <form id="add_form">
-                            <div><img src="styles/images/add-task.png" alt="add-task"></div>
-                            <div><input type="text" id="add-input" placeholder="I should to..."></div>
+                        <form id="add_form" >
+                            <div>
+                                <img src="styles/images/add-task.png" alt="add-task">
+                            </div>
+                            <div >
+                                <input type="text" id="add-input" placeholder="I should to...">
+                            </div>
                         </form>
                     </div>
-
                 </div>
                 <div id="notepad">
                     <img src="styles/images/enlarge.png" alt="Large notepad" id="enlarge">
