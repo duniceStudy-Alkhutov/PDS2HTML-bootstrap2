@@ -11,27 +11,32 @@
     <script src="js/jquery-ui.js"></script>
     <script src="js/app.js"></script>
     <script src="js/my.js"></script>
+    <script>$('.nav-collapse .nav > li > a').click(function(){
+        $('.collapse.in').removeClass('in').css('height', '0');
+    });</script>
     <title>bootstrap version</title>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header">
+
             <a class="navbar-brand"><img src="styles/images/logo.png" alt="METRONIC"></a>
-        </div>
-        <div class="navbar-collapse collapse pull-right">
-            <ul class="nav navbar-nav navbar-right nav-header">
-                <li><a href="#"><img src="styles/images/notify.jpg"></a></li>
-                <li><a href="#"><img src="styles/images/messages.jpg"></a></li>
-                <li><a href="#"><img src="styles/images/korobki.jpg"></a></li>
-                <li><a href="#"><img src="styles/images/bob_nilson.jpg"> Bob Nilson</a> </li>
-            </ul>
-        </div>
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#left-panel">
+                <img src="styles/images/menu-toggler.png" alt="menu">
+            </button>
+                <ul class="nav-header pull-right">
+                    <li><a href="#"><img src="styles/images/notify.jpg"></a></li>
+                    <li><a href="#"><img src="styles/images/messages.jpg"></a></li>
+                    <li><a href="#"><img src="styles/images/korobki.jpg"></a></li>
+                    <li><a href="#"><img src="styles/images/bob_nilson.jpg"> Bob Nilson</a> </li>
+                </ul>
+            </div>
     </div>
 </div>
-<div class="container-fluid page-container">
+<div class=" page-container">
     <div class="row">
-        <div class="col col-md-2 left-sidebar" id="left-panel">
+        <div class="col-md-2 left-sidebar navbar-collapse " id="left-panel">
             <ul class="nav nav-sidebar">
                 <li class="sidebar-toggler-wrapper">
                     <div class="sidebar-toggler hidden-phone"></div>
@@ -70,18 +75,20 @@
                 </li>
             </ul>
         </div>
-        <div class=" col-md-7">
+        <div class="col-md-7">
             <div class="content" >
-                <div id="mail-layer" class="layers">
-                    <h1>Input/Output</h1>
-                    <div class="address-box">
-                        <img src="styles/images/home.png" alt="home">
-                        <span>Home</span>
-                        <img src="styles/images/arrow-right.png" alt="">
-                    </div>
-                    <div class="type-box">
-                        <div class="inbox-box">Inbox(3)</div>
-                        <div class="outbox-box">Outbox</div>
+                <div id="mail-layer" class="layers row">
+                    <div class="col-md-12">
+                        <h1>Input/Output</h1>
+                        <div class="address-box">
+                            <img src="styles/images/home.png" alt="home">
+                            <span>Home</span>
+                            <img src="styles/images/arrow-right.png" alt="">
+                        </div>
+                        <div class="type-box">
+                            <div class="inbox-box">Inbox(3)</div>
+                            <div class="outbox-box">Outbox</div>
+                        </div>
                     </div>
                     <div class="mail-box">
                         <div class="mail-box-header">
@@ -502,7 +509,7 @@
                 </div>
             </div>
         </div>
-        <div class=" col-md-3">
+        <div class="col-md-3 third-panel">
             <div class="input-elements">
                 <div class="control-group">
                     <label class="control-label" for="title">Title</label>

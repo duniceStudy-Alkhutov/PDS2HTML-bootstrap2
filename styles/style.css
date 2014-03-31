@@ -8,6 +8,9 @@ html,body{
 .navbar-brand span{
     color: red;
 }
+.nav-header {
+    margin-top: 5px;
+}
 .nav-header li img{
     height: 28px;
 }
@@ -22,8 +25,20 @@ html,body{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.nav-header li{
+    display: inline;
+}
+.nav-header li a{
+    color: #ffffff;
+}
 .page-container{
     margin-top: 50px;
+}
+@media (max-width: 768px) {
+    .left-sidebar{
+        display: none;
+    }
+
 }
 .sidebar-toggler {
     cursor: pointer;
@@ -39,6 +54,7 @@ html,body{
 }
 #left-panel{
     height: 100%;
+    max-height: none;
 }
 .left-sidebar{
     background: #3d3d3d;
@@ -220,7 +236,7 @@ li.active div:after{
 /************    MAIL LAYOUT   ***********/
 #mail-layer{
     display: none;
-    min-width: 610px;
+    min-width: 510px;
 }
 .inbox-box{
     background: #009cf7;
@@ -238,6 +254,7 @@ li.active div:after{
 }
 .mail-box{
     margin: 10px 20px 0 20px;
+    padding: 0 10px;
 }
 .mail-box-header{
     padding: 5px;
@@ -608,6 +625,10 @@ label.css-label {
 }
 /************    RIGHT PANEL   ***********/
 /************   FEATURES AREA   **********/
+.third-panel{
+    padding: 10px 20px;
+    margin: 0 20px;
+}
 #features-area{
 
 }
@@ -616,6 +637,7 @@ label.css-label {
     -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 1);
     -moz-box-shadow:    0 0 5px 0 rgba(50, 50, 50, 1);
     box-shadow:         0 0 5px 0 rgba(50, 50, 50, 1);
+    margin: 0 15px;
 }
 #todo:nth-child(1){
     margin-left: 0px;
@@ -713,7 +735,7 @@ label.css-label {
     font-size: 16px;
     padding-top: 8px;
     padding-left: 10px;
-    background: url("images/notepad-line.png") repeat-y;
+    background: url("images/notepad-line.png");
 }
 #notepad img{
     position: absolute;
